@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0cd6a8;
+}
+
+
+h1 {
+    color: rgb(0, 0, 225);
+    font-size: 25px;
+    text-align: center;
+    text-decoration: underline;
+    text-shadow: 5px 5px 2px grey;
+}
+
+h2 {
+    color: rgb(0, 0, 255);
+    font-size: 20px;
+    text-align: left;
+    font-weight: bold;
+    font-style: italic;
+}
+
+p {
+    font-size: 14px;
+    text-align: justify;
+    color: #333;
+    font-family: Arial, sans-serif;
+    text-indent: 0.5cm;
+    line-height: 1.5;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer table {
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+footer th, footer td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+header {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.profile-image {
+    width: 20%;
+    border: 3px solid black;
+    border-radius: 50%; 
+    max-width: 100%;
+}
+
+.svg-icon {
+    width: 10%;
+    border: 3px solid red;
+    max-width: 100%;
+}
+
+.large-image {
+    width: 80%;
+    margin: 20px auto;
+    display: block;
+    border: 5px solid #333;
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 800px) {
+
+    .header-content {
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center;
+    }
+
+
+    .profile-image {
+        width: 50%;
+    }
+
+    h1 {
+        width: 100%;
+        text-align: center; 
+    }
+
+
+    .svg-icon {
+        width: 100%; 
+        border: 5px solid blue; 
+    }
+
+    .large-image {
+        width: 100%;
+    }
+
+    table {
+        width: 100%; 
+        font-size: 12px;
+    }
+
+    footer table {
+        margin-top: 20px;
+    }
+}
